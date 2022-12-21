@@ -1,0 +1,20 @@
+#630510619 
+#nuttawat khamwangsawat
+#Lab01_5
+
+def display_time(sec):
+    day = (sec//3600)//24
+    a = sec%86400
+    hour = a//3600
+    b = a%3600
+    minute = b//60
+    c = b%60
+    second = c
+    print("%d:%02d:%02d:%02d"%(day,hour,minute,second))#answer
+
+def main():
+    sec = int(input())
+    display_time(sec)
+
+if __name__ == '__main__':
+    main()
